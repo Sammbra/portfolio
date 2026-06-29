@@ -1,0 +1,55 @@
+.project {
+  max-width: 106.25rem;
+  margin: 5rem auto 12.5rem;
+  padding: 0 10rem;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.overview__content {
+  max-width: 43rem;
+  text-align: justify;
+}
+
+.overview__title {
+  margin-bottom: 1rem;
+}
+
+.overview__description,
+.overview__details {
+  text-align: left;
+}
+
+.project__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project__gallery-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-picture {
+  min-width: 0; /* 🔴 critical fix for overflow */
+  overflow: hidden; /* hides any overflow */
+}
+
+.project-picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.project__section-content img {
+  max-width: 100%;
+}

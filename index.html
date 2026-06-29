@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic SEO -->
+    <title>Sara Vukman | UI Designer & Graphic Designer</title>
+
+    <meta
+      name="description"
+      content="Hey! I'm Sara, a designer in practice, exploring UI, web and visual design through personal and academic projects. View my portfolio."
+    />
+    <meta name="author" content="Sara Vukman" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Theme Color (mobile browsers) -->
+    <meta name="theme-color" content="#121212" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Sara Vukman | UI Designer & Graphic Designer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing graphic design and web design projects."
+    />
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/75d715321e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Sara Vukman</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav class="header__nav nav">
+        <div class="header__logo">
+          <img
+            src="images/logo.svg"
+            alt="Author logo"
+            class="header__logo-img"
+          />
+        </div>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+
+        <ul class="header__menu menu" id="header-menu">
+          <li class="header__menu-item">
+            <a href="#home" class="header__menu-link">Home</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about" class="header__menu-link">About</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#work" class="header__menu-link">Work</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contact" class="header__menu-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">WHO AM I?</h1>
+          <p class="hero__description">
+            Hey! I&apos;m Sara, a designer in practice, exploring UI, web and
+            visual design through personal and academic projects.
+          </p>
+          <button class="hero__cta btn" onClick="window.location.href='#about'">
+            Learn more
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="about" id="about">
+        <div class="about__content">
+          <h2 class="about__title">What do I do?</h2>
+          <p class="about__description">
+            I work across UI, web, and visual design, mostly through personal
+            and academic projects. I enjoy the part of the process where ideas
+            start messy and slowly take shape through layout, type, and visual
+            structure. I try to understand what I&apos;m designing before
+            deciding how it should look. That usually means asking questions,
+            experimenting, and reworking things more than once until they make
+            sense. I have a master&apos;s degree in Graphics Technology and have
+            experience through a UI/UX internship and independent projects. Most
+            of what I&apos;ve learned comes from doing the work and figuring
+            things out along the way. Outside of design, I like playing games,
+            traveling, going to concerts, sketching, and taking photos.
+          </p>
+        </div>
+
+        <div class="about__image">
+          <img
+            class="about__image"
+            src="images/author.png"
+            alt="Portrait of Sara"
+          />
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <h2 class="work__title">Work</h2>
+
+        <section class="work__category">
+          <h3 class="work__category-title">Graphic design</h3>
+          <div class="work__grid">
+            <a
+              href="projects/graphic-design/city-posters.html"
+              class="project-card"
+            >
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="/images/cities/city-posters-m.jpg"
+                />
+                <img
+                  class="work__grid-poster"
+                  src="/images/cities/city-posters-d.jpg"
+                  alt="City posters project"
+                />
+              </picture>
+            </a>
+            <a
+              href="projects/graphic-design/brutalism.html"
+              class="project-card"
+            >
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="/images/brutalism/brutalism-posters-m.jpg"
+                />
+                <img
+                  class="work__grid-poster"
+                  src="/images/brutalism/brutalism-posters-d.jpg"
+                  alt="Brutalism project"
+                />
+              </picture>
+            </a>
+            <a
+              href="projects/graphic-design/amplified-moment.html"
+              class="project-card"
+            >
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="/images/amplified-moment/amplified-moment-m.jpg"
+                />
+                <img
+                  class="work__grid-poster"
+                  src="/images/amplified-moment/amplified-moment-d.jpg"
+                  alt="Amplified Moment project"
+                />
+              </picture>
+            </a>
+          </div>
+        </section>
+
+        <section class="work__category">
+          <h3 class="work__category-title">UI Design</h3>
+          <div class="work__grid">
+            <a href="/projects/ui-design/symphony.html" class="project-card">
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="/images/symphony/dark-light-mockup-m.jpg"
+                />
+                <img
+                  class="work__grid-poster"
+                  src="/images/symphony/dark-light-mockup-d.jpg"
+                  alt="Symphony project"
+                />
+              </picture>
+            </a>
+            <a href="/projects/ui-design/tlou.html" class="project-card">
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="/images/tlou/tlou-mockup-m.jpg"
+                />
+                <img
+                  class="work__grid-poster"
+                  src="/images/tlou/tlou-mockup-d.jpg"
+                  alt="The Last of Us project"
+                />
+              </picture>
+            </a>
+          </div>
+        </section>
+
+        <section class="work__category">
+          <h3 class="work__category-title">Photography</h3>
+          <div class="gallery">
+            <div class="gallery__row gallery__row--two">
+              <img
+                class="project-card"
+                src="/images/gallery/top1.jpg"
+                alt="Twenty One Pilots concert photography "
+              />
+              <img
+                class="project-card"
+                src="/images/gallery/top2.jpg"
+                alt="Twenty One Pilots concert photography 2"
+              />
+            </div>
+
+            <div class="gallery__row gallery__row--three">
+              <img
+                class="project-card"
+                src="/images/gallery/royel-otis-1.jpg"
+                alt="Royel Otis concert photography"
+              />
+              <img
+                class="project-card"
+                src="/images/gallery/royel-otis2.jpg"
+                alt="Royel Otis concert photography"
+              />
+              <img
+                class="project-card"
+                src="/images/gallery/royel-otis3.jpg"
+                alt="Royel Otis concert photography"
+              />
+            </div>
+
+            <div class="gallery__row gallery__row--three">
+              <img
+                class="project-card"
+                src="images/gallery/florence-road.jpg"
+                alt="Florence Road concert photography"
+              />
+              <img
+                class="project-card"
+                src="images/gallery/WA2.jpg"
+                alt="Wolf Alice concert photography"
+              />
+              <img
+                class="project-card"
+                src="images/gallery/WA3.jpg"
+                alt="Wolf Alice concert photography"
+              />
+            </div>
+
+            <div class="gallery__row gallery__row--three">
+              <img
+                class="project-card"
+                src="images/gallery/WA4.jpg"
+                alt="Wolf Alice concert photography"
+              />
+              <img
+                class="project-card"
+                src="images/gallery/WA5.jpg"
+                alt="Wolf Alice concert photography"
+              />
+              <img
+                class="project-card"
+                src="images/gallery/WA6.jpg"
+                alt="Wolf Alice concert photography"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer__content">
+        <h2 class="footer__title">Let&apos;s get in touch</h2>
+
+        <nav class="footer__nav nav">
+          <ul class="footer__menu menu">
+            <li class="footer__menu-item">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#work">Work</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="footer__info">
+          <div class="footer__logo">
+            <a href="#top"
+              ><img
+                class="logo header__logo-img"
+                src="images/logo.svg"
+                alt="Author logo"
+            /></a>
+          </div>
+          <div class="footer__info-group">
+            <a
+              href="https://wa.me/385912427514"
+              target="_blank"
+              aria-label="Contact me on WhatsApp"
+              class="footer__info-item"
+            >
+              <i class="fa-brands fa-whatsapp footer__icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sara-vukman-67b415224"
+              target="_blank"
+              aria-label="Contact me on LinkedIn"
+              class="footer__info-item"
+            >
+              <i class="fa-brands fa-linkedin footer__icon"></i>
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=vukman.saraa@gmail.com"
+              target="_blank"
+              aria-label="Send me an email"
+              class="footer__info-item"
+            >
+              <i class="fa-regular fa-envelope footer__icon"></i>
+            </a>
+          </div>
+        </section>
+        <p class="footer__copyright">
+          &copy; 2026 Sara Vukman. Made with &#10084;&#65039;
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
